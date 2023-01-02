@@ -42,10 +42,10 @@ async function execute(interaction) {
             for (let i = 0; i < sanction.reasons.length; i++) {
                 if (sanction.reasons[i] === raison) {
                     let values = JSON.stringify(sanction.values)
-                    values = values.replace("[", "")
+                    values = values.replace("[", ``)
                     values = values.replace("]", "")
                     values = values.replaceAll("\"", "")
-                    values = values.replaceAll(",", "\n")
+                    values = values.replaceAll(",", `\n`)
                     values = values.toUpperCase()
                     embedMessage.addFields({name:`${JSONPenalties.enum[raison].emoji} ${JSONPenalties.enum[raison].name}`, value: values, inline: true });
                 }

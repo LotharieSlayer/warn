@@ -7,7 +7,9 @@
 
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { EmbedBuilder } = require("discord.js");
-const { warnedUsers, reports } = require("../utils/enmapUtils");
+const { warnedUsers } = require("../utils/enmapUtils");
+const { reports } = require("../../report/utils/enmapUtils");
+
 const JSONPenalties = require(`../files/sanctions.json`);
 
 /* ----------------------------------------------- */
