@@ -1,2 +1,2 @@
 # warn
-Warn WTPBot Plugin 
+Warn plugin for WTPBot 
